@@ -4,6 +4,11 @@
 
 - python的菜鸟教程：[菜鸟教程](https://www.runoob.com/python/python-tutorial.html)
 
+## 项目路径
+
+- src 代码
+- attachments 附件
+
 ## Some Questions
 
 ### 绝对路径相对路径问题 \[path]
