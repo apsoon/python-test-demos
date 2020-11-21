@@ -35,4 +35,4 @@ def post(url, data=None, header=None):
     """
 
     # 打印语句代表接口调用了
-    print("调用接口：[" + url + "]，data为：[" + data + "]，json为：[" + json + "]，method为：[POST]")
+    print("调用接口：[" + url + "]，data为：[" + data + "]，header：[" + header + "]，method为：[POST]")
