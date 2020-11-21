@@ -26,6 +26,7 @@ def test_create_company():
     result = CompanyManage.create_company(data)
     # 断言
     assert result == 10004
+    # todo 不知道数据库在什么场景用，这里就可以用呀, 可以查一下数据库，看数据有没有正确的存储进去
 
 
 def test_company_detail():
