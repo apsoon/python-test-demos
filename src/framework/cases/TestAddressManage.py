@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-from src.framework.apifuncs import AddressManage
+from src.framework.apifuncs import AddressManageFuncs
 
 """
 地址管理测试用例
@@ -19,7 +19,7 @@ def test_create_address():
         "name": "地址0004"
     }
     # 调用接口
-    result = AddressManage.create_address(data)
+    result = AddressManageFuncs.create_address(data)
     # 断言
     assert result == 10004
 
@@ -31,6 +31,6 @@ def test_company_detail():
     """
 
     # 调用接口
-    result = AddressManage.address_detail(10003)
+    result = AddressManageFuncs.address_detail(10003)
     # 断言
     assert result["name"] == "地址0003"
