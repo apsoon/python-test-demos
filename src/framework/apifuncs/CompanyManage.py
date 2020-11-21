@@ -1,4 +1,4 @@
-# ! /usr/bin/python
+#!/usr/bin/python
 
 from src.framework.constants import Api
 from src.framework.utils import RequestUtil
@@ -8,14 +8,14 @@ from src.framework.utils import RequestUtil
 """
 
 
-#
 def create_company(data):
     """
     创建公司
-    :param data:
-    :return:
+    :param data: 公司数据
+    :return: 创建的公司id
     """
-    # 这里设置一些额外数据, todo 这里用area举例可能不太好
+
+    # 这里设置一些额外数据, 这里用area举例可能不太好
     data["area"] = "CHINA"
 
     # 调用创建公司接口
@@ -24,9 +24,14 @@ def create_company(data):
     return 10004
 
 
-# 获取公司详情
 def company_detail(company_id):
-    # post请求数据
+    """
+    获取公司详情
+    :param company_id: 公司id
+    :return: 公司数据
+    """
+
+    # 接口请求数据
     data = {
         "id": company_id
     }
@@ -37,6 +42,12 @@ def company_detail(company_id):
 
 
 def _get_company_demo_detail(company_id):
+    """
+    示例公司假数据获取方法
+    :param company_id: 公司id
+    :return: 返回公司假数据
+    """
+
     # 预置的数据
     demo_detail = {
         10001: {

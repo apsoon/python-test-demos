@@ -8,8 +8,12 @@ from src.framework.helper import CompanyManageCaseHelper
 """
 
 
-# 测试创建公司
 def test_create_company():
+    """
+    创建公司测试用例
+    :return:
+    """
+
     # 获取地址id
     address_id = CompanyManageCaseHelper.get_address_id("苏州")
     # 测试创建公司的数据
@@ -24,8 +28,12 @@ def test_create_company():
     assert result == 10004
 
 
-# 测试修改公司
 def test_company_detail():
+    """
+    修改公司测试用例
+    :return:
+    """
+
     # 调用接口
     result = CompanyManage.company_detail(10003)
     # 断言

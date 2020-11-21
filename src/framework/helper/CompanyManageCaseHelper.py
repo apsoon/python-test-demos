@@ -1,3 +1,10 @@
+#!/usr/bin/python
+
+"""
+公司测试用例辅助工具
+"""
+
+
 def get_address_id(data):
     """
     获取地址id方法封装
