@@ -1,6 +1,6 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-from src.framework.apifuncs import AddressManageFuncs
+from src.framework.src.apifuncs import AddressManageFuncs
 
 """
 地址管理测试用例

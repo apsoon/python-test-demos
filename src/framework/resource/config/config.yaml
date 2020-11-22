@@ -1,0 +1,5 @@
+# 配置文件
+mysql:
+  host: localhost
+  username: root
+  password: root@MySQL

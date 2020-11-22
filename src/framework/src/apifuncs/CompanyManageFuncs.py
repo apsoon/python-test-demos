@@ -1,7 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-from src.framework.constants import Api
-from src.framework.utils import RequestUtil
+from src.framework.src.constants import Api
+from src.framework.src.utils import RequestUtil
 
 """
 公司管理接口调用方法

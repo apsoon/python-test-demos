@@ -1,7 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
-from src.framework.apifuncs import CompanyManageFuncs
-from src.framework.helper import CompanyManageCaseHelper
+from src.framework.src.apifuncs import CompanyManageFuncs
+from src.framework.src.helper import CompanyManageCaseHelper
 
 """
 公司管理测试用例

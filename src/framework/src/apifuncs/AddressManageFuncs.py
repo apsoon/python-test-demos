@@ -1,6 +1,6 @@
-#!/usr/bin/python
-from src.framework.constants import Api
-from src.framework.utils import RequestUtil
+#!/usr/bin/python3
+from src.framework.src.constants import Api
+from src.framework.src.utils import RequestUtil
 
 """
 地址管理接口调用方法

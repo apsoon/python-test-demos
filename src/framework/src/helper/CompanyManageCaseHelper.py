@@ -1,8 +1,9 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 """
 公司测试用例辅助工具
 """
+from src.framework.src.repo.dao import AddressDao
 
 
 def get_address_id(data):
@@ -15,16 +16,17 @@ def get_address_id(data):
     :return: 地址id
     """
 
-    return 10001
+    # 这里选择从数据库中查
+    return _get_address_id_from_db(data)
 
 
-def _get_address_id_from_db(data):
+def _get_address_id_from_db(code):
     """
     从数据库中获取
-    :param data: 参数
+    :param code: 地址编码
     :return: 地址id
     """
-    pass
+    return AddressDao.get_addr_by_code(code)
 
 
 def _get_address_id_from_json(data):
