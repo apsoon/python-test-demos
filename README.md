@@ -11,4 +11,5 @@
   - framework 框架思路
   - mysql 数据库
   - path 绝对路径相对路径问题
+  - test_case_token 获取token
   - test_module 模块间交互
