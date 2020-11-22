@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python33
 
 # -------------------------- #
 #      这个里面我没有调过       #
@@ -6,7 +6,7 @@
 
 
 import pymysql
-from mysql.Model import Company
+from src.mysql.Model import Company
 from pymysql.cursors import Cursor
 
 # 打开数据库连接
