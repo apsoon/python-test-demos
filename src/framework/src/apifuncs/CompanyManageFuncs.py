@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-from src.framework.src.constants import Api
+from src.framework.src.constants import ApiUrl
 from src.framework.src.utils import RequestUtil
 
 """
@@ -19,7 +19,7 @@ def create_company(data):
     data["area"] = "CHINA"
 
     # 调用创建公司接口
-    result = RequestUtil.post(Api.CompanyManage.create_company, data)
+    result = RequestUtil.post(ApiUrl.CompanyManage.create_company, data)
     # 这里返回假数据
     return 10004
 
@@ -36,7 +36,7 @@ def company_detail(company_id):
         "id": company_id
     }
     # 调用获取公司详情接口
-    result = RequestUtil.post(Api.CompanyManage.company_detail, data)
+    result = RequestUtil.post(ApiUrl.CompanyManage.company_detail, data)
     # 这里返回假数据
     return _get_company_demo_detail(company_id)
 

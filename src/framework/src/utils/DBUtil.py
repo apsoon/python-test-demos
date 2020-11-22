@@ -1,15 +1,14 @@
 #!/usr/bin/python3
 
 import pymysql
+from src.framework.src.utils import YamlUtil
 
 """
 数据库工具类
 """
 
 # 数据库连接信息
-data_base_info = {
-
-}
+mysql_config = YamlUtil.get_mysql_config()
 
 
 def _get_connect():
@@ -17,7 +16,7 @@ def _get_connect():
     获取数据库连接
     :return:
     """
-    return pymysql.connect(data_base_info['host'], data_base_info['username'], data_base_info['password'])
+    return pymysql.connect(mysql_config['host'], mysql_config['username'], mysql_config['password'])
 
 
 def _get_cursor(conn: pymysql.Connection):

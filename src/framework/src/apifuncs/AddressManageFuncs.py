@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from src.framework.src.constants import Api
+from src.framework.src.constants import ApiUrl
 from src.framework.src.utils import RequestUtil
 
 """
@@ -14,7 +14,7 @@ def create_address(data):
     :return: id
     """
 
-    result = RequestUtil.post(Api.AddressManage.create_address, data)
+    result = RequestUtil.post(ApiUrl.AddressManage.create_address, data)
     return 10001
 
 
@@ -30,7 +30,7 @@ def address_detail(address_id):
         "id": address_id
     }
     # 调用接口
-    result = RequestUtil.post(Api.AddressManage.address_detail, data)
+    result = RequestUtil.post(ApiUrl.AddressManage.address_detail, data)
     # 这里返回假数据
     return _get_address_demo_detail(address_id)
 
