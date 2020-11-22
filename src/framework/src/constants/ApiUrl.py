@@ -7,23 +7,32 @@
 
 class Base:
     # 域名
-    domain = "http://demo.com"
+    DOMAIN = "http://demo.com"
+
+
+class User:
+    # 基础路径
+    _BASE_URL = Base.DOMAIN + "/user"
+    # 登陆
+    LOGIN = _BASE_URL + "/login"
 
 
 # 公司管理相关接口path
+
+
 class CompanyManage:
     # 基础路径
-    _base_url = Base.domain + "/company"
+    _BASE_URL = Base.DOMAIN + "/company"
     # 创建公司
-    create_company = _base_url + "/create"
+    CREATE_COMPANY = _BASE_URL + "/create"
     # 修改公司
-    update_company = _base_url + "/modify"
+    UPDATE_COMPANY = _BASE_URL + "/modify"
     # 获取公司列表
-    company_list = _base_url + "/list"
+    COMPANY_LIST = _BASE_URL + "/list"
     # 删除公司
-    delete_company = _base_url + "/delete"
+    DELETE_COMPANY = _BASE_URL + "/delete"
     # 获取公司详情
-    company_detail = _base_url + "/detail"
+    COMPANY_DETAIL = _BASE_URL + "/detail"
 
     def __init__(self):
         pass
@@ -32,17 +41,17 @@ class CompanyManage:
 # 地址管理相关接口path
 class AddressManage:
     # 基础路径
-    _base_url = Base.domain + "/address"
+    _BASE_URL = Base.DOMAIN + "/address"
     # 创建地址
-    create_address = _base_url + "/create"
+    CREATE_ADDRESS = _BASE_URL + "/create"
     # 修改地址
-    update_address = _base_url + "/modify"
+    UPDATE_ADDRESS = _BASE_URL + "/modify"
     # 获取地址列表
-    address_list = _base_url + "/list"
+    ADDRESS_LIST = _BASE_URL + "/list"
     # 删除地址
-    delete_address = _base_url + "/delete"
+    DELETE_ADDRESS = _BASE_URL + "/delete"
     # 获取地址详情
-    address_detail = _base_url + "/detail"
+    ADDRESS_DETAIL = _BASE_URL + "/detail"
 
     def __init__(self):
         pass
