@@ -3,6 +3,7 @@
 ## 一些教程
 
 - python的菜鸟教程：[菜鸟教程](https://www.runoob.com/python/python-tutorial.html)
+- pytest教程：[Pytest权威教程(官方教程翻译)](https://www.cnblogs.com/superhin/p/11677240.html)
 
 ## 项目结构
 
