@@ -49,3 +49,6 @@ def execute_sql(sql):
         if conn is not None:
             conn.close()
     return result
+
+
+execute_sql("SELECT * FROM t_company")

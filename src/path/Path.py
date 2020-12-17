@@ -36,3 +36,7 @@ print("----------------- 获取系统文件分隔符示例 ------------------")
 print("当前系统的文件分隔符为 " + os.sep)
 fileRelatePath = os.sep + "path" + os.sep + "Path.py"
 print("文件的路径为 " + fileRelatePath)
+
+print("----------------- BASE_DIR ------------------")
+BASE_DIR = os.path.dirname(os.path.abspath(os.path.dirname(__file__)))
+print(BASE_DIR)

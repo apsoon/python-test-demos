@@ -3,6 +3,8 @@
 """
 公司测试用例辅助工具
 """
+import pytest
+
 from src.framework.src.repo.dao import AddressDao
 
 
@@ -20,6 +22,7 @@ def get_address_id(data):
     return _get_address_id_from_db(data)
 
 
+@pytest.mark.parametrize()
 def _get_address_id_from_db(code):
     """
     从数据库中获取
